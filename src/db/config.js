@@ -18,7 +18,7 @@ export const dbConnect = async () => {
             useUnifiedTopology: true,
         });
 
-        const url = `${connection.connection.host}:${connection.connection.port}`;
+        const url = `${connection.connection.host}: ${connection.connection.port}`;
 
         console.log(`MongoDB conectado en: ${url}`);
     } catch (error) {
